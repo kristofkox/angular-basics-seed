@@ -9,6 +9,7 @@ import {DonutCardComponent} from "../../components/donut-card/donut-card.compone
 @Component({
   standalone: true,
   imports: [RouterModule, DonutCardComponent, NgIf, NgForOf],
+  providers: [DonutService],
   selector: 'donut-list',
   template: `
       <div>

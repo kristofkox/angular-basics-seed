@@ -1,7 +1,5 @@
 import {Routes} from "@angular/router";
 
-
-
 export const AdminRoutes: Routes = [
   {
     path: 'donuts',
@@ -24,19 +22,4 @@ export const AdminRoutes: Routes = [
   // put always at the end
   {path: '', pathMatch: 'full', redirectTo: 'donuts'},
 ];
-
-// @NgModule({
-//   declarations: [
-//     DonutListComponent,
-//     DonutSingleComponent,
-//     DonutCardComponent,
-//     DonutFormComponent,
-//   ],
-//   imports: [
-//     CommonModule, FormsModule, RouterModule.forChild(AdminRoutes)
-//   ]
-// })
-// export class AdminModule {
-// }
-
 
