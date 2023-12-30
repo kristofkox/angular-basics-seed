@@ -1,7 +1,12 @@
+import {CurrencyPipe, NgClass, NgSwitch, NgSwitchCase, NgSwitchDefault} from "@angular/common";
 import {Component, Input, ViewEncapsulation} from '@angular/core';
+import {RouterModule} from "@angular/router";
+
 import {Donut} from "../../models/donut.model";
 
 @Component({
+  standalone: true,
+  imports: [RouterModule, NgClass, NgSwitch, NgSwitchCase, CurrencyPipe, NgSwitchDefault],
   selector: 'donut-card',
   encapsulation: ViewEncapsulation.Emulated, // Is de default dat wil zeggen dat nu de css van styles.scss genomen wordt
   template: `
